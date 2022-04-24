@@ -1,0 +1,2 @@
+# Path
+ FileExists($Dir2Ceck) Then     if StringInStr(FileGetAttrib($Dir2Ceck),"D") Then ; Attribute "D" indicates this is a DIR         ConsoleWrite("Directory " &amp; $Dir2Ceck &amp; " exists" &amp; @CRLF)     Else         ConsoleWrite("Path exists, but isn't a directory (a file, propably): " &amp; $Dir2Ceck &amp; @CRLF)     EndIf Else     ConsoleWrite("Path not found: " &amp; $Dir2Ceck &amp; @CRLF) EndIf
